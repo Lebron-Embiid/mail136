@@ -1,0 +1,496 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;;
+    font-family: "微软雅黑";
+}
+.l{
+    float: left;
+}
+.r{
+    float: right;
+}
+body{
+    background: #F2F2F2;
+}
+.common{
+    width:900px;
+    margin:0 auto;
+}
+/*顶部左边部分*/
+.head{
+    width:100%;
+    height:65px;
+    background: #fff;
+}
+.head-left img{
+    display: block;
+    width:136px;
+    height:32px;
+    float: left;
+    padding:18px 5px;
+    border:none;
+}
+.head-left .logo{
+    width:144px;
+    height:28px;
+    background: url("bg_v3.png") 0 -64px no-repeat;
+    float: left;
+    margin:18px 5px;
+    cursor: pointer;
+}
+/*顶部导航*/
+.head-right ul{
+    float: left;
+    position: relative;
+}
+.head-right ul a{
+    color:#959595;
+    font-size: 12px;
+}
+.head-right ul a:hover{
+    color:#626262;
+}
+.head-right ul li{
+    float: left;
+    padding:20px 10px;
+}
+.head-right ul li:last-child{
+    padding-right:0px;
+}
+.head-right span{
+    display: block;
+    height:16px;
+    color:#cfd0d0;
+    position: absolute;
+    top:23px;
+    right: 50px;
+    overflow: hidden;
+}
+/*内容背景*/
+.content{
+    position: relative;
+    height:640px;
+}
+.content .same{
+    width:605px;
+    height:600px;
+    background: url("promPic.jpg") left top no-repeat;
+    overflow: hidden;
+    position: absolute;
+    left:180px;
+    cursor: pointer;
+}
+.content img{
+    display: none;
+}
+/*内容右边*/
+.content-right{
+    width:295px;
+    height:460px;
+    background: url("login_v5.png") -335px -15px no-repeat;
+    float: right;
+    position: relative;
+    top:85px;
+    box-shadow: 1px 1px 2px #ccc;
+    z-index: 20;
+}
+.content-right .two{
+    width:147px;
+    height:50px;
+    float: left;
+    background: url("icon_code.png") 30px 15px no-repeat;
+    position: relative;
+    cursor: pointer;
+}
+.content-right .two a{
+    color:#626262;
+    font-size: 14px;
+    position: absolute;
+    top:11px;
+    left:45px;
+}
+.content-right .email{
+    width: 147px;
+    height:50px;
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+.content-right .email a{
+    color:#626262;
+    font-size: 14px;
+    position: absolute;
+    top:11px;
+    left:30px;
+}
+/*登录部分*/
+.content-right .login{
+    width:295px;
+    height:460px;
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+.login .input-id{
+    width:250px;
+    height:40px;
+    border:1px solid #999999;
+    border-radius: 4px;
+    margin:40px 20px 20px 25px;
+}
+.icon-id{
+    width:23px;
+    height:27px;
+    background: url("bg_v3.png") -145px -52px no-repeat;
+    float: left;
+}
+.id-content input{
+    width:130px;
+    border:none;
+    outline: none;
+    text-align: left;
+    line-height:40px;
+    font-size:14px;
+    margin-left: 5px;
+    float: left;
+}
+.id-com{
+    width:80px;
+    height:40px;
+    float: right;
+    background: url("bg_v3.png") -8px -108px no-repeat;
+}
+/*密码*/
+.login .input-pwd{
+    width:250px;
+    height:40px;
+    border:1px solid #999999;
+    border-radius: 4px;
+    margin:30px 20px 20px 25px;
+}
+.icon-pwd{
+    width:23px;
+    height:27px;
+    background: url("bg_v3.png") -170px -53px no-repeat;
+    float: left;
+}
+.pwd-content input{
+    width:215px;
+    height:40px;
+    margin-left: 5px;
+    border:none;
+    outline: none;
+    float: left;
+}
+/*登录*/
+.login p{
+    margin-left: 35px;
+    padding-left: 20px;
+    float: left;
+    font-size: 12px;
+    color:#848594;
+    background: url("bg_v3.png") -40px -158px no-repeat;
+    cursor: pointer;
+}
+.login span{
+    float: right;
+    font-size: 12px;
+    color:#848594;
+    margin-right: 20px;
+}
+.login .btn{
+    width:295px;
+    clear:both;
+    font-weight:bold;
+    font-size: 14px;
+    text-align: center;
+}
+.login .btn .dl{
+    display: block;
+    width:110px;
+    height:55px;
+    background: url("bg_v3.png") 0 -200px no-repeat;
+    float: left;
+    margin:10px 20px 20px 25px;
+    line-height: 55px;
+    color:#fff;
+}
+.login .btn .zc{
+    display: block;
+    width:110px;
+    height:55px;
+    line-height: 55px;
+    color:#80798C;
+    float: right;
+    margin: 10px 20px 20px 0;
+    background: url("bg_v3.png") -117px -200px no-repeat;
+}
+.login .btn .dl:hover{
+    background: url("bg_v3.png") 0 -248px no-repeat;
+}
+.login .btn .zc:hover{
+    background: url("bg_v3.png") -117px -248px no-repeat;
+    color:#666666;
+}
+#forget-pwd:hover{
+    cursor: pointer;
+    color:#666666;
+}
+.login h6{
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 12px;
+    color:#848594;
+    float: left;
+    font-weight: lighter;
+    position: relative;
+    z-index: -1;
+}
+.login .select a{
+    display: block;
+    height:16px;
+    float: left;
+    color:#848594;
+    font-size: 12px;
+    margin-bottom: 50px;
+}
+.login .select a:hover{
+    color:#626262;
+}
+.login .select .show-bb{
+    display: block;
+    clear: both;
+    width:10px;
+    height: 5px;
+    background: url("bg_v3.png") -160px -115px no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top:281px;
+    left:108px;
+}
+.login .select .show-bb:hover{
+    background: url("bg_v3.png") -176px -115px no-repeat;
+}
+.login .select .box-bb{
+    width:145px;
+    height:70px;
+    border:1px solid #CFD6DA;
+    clear: both;
+    margin-left: 55px;
+    overflow: hidden;
+    position: relative;
+    top:-20px;
+    z-index: 1;
+    display: none;
+}
+.login .select .box-bb a{
+    clear: both;
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding:3px 20px;
+}
+.login .select .box-bb a:hover{
+    background: #EEF3F8;
+}
+.login .select .box-bb a.on{
+    color:#5B8CCA;
+    background: url("bg_v3.png") -250px -58px no-repeat;
+}
+/*广告*/
+.login .ad{
+    width:294px;
+    height:68px;
+    background: #F6F6F6;
+    border:none;
+    clear:both;
+    overflow: hidden;
+    margin:0 2px;
+}
+.login .ad ul li{
+    text-indent: 20px;
+    margin-top:8px;
+}
+.login .ad ul li a{
+    font-size: 12px;
+    color:#9BACC6;
+}
+.login .ad ul li a:hover{
+    color:#5B8CCA;
+}
+/*翻页*/
+.content .icon-ln{
+    width:60px;
+    height:25px;
+    position: absolute;
+    right:225px;
+    top: 580px;
+    margin-bottom:20px;
+}
+.content .icon-ln .next{
+    display: block;
+    float: left;
+    width:30px;
+    height: 25px;
+    background: url("bg_v3.png") 0 -457px no-repeat;
+    cursor: pointer;
+}
+.content .icon-ln .next:hover{
+    background: url("bg_v3.png") 0 -492px no-repeat;
+}
+.content .icon-ln .last{
+    display: block;
+    float: right;
+    width: 30px;
+    height: 25px;
+    background: url("bg_v3.png") -36px -457px no-repeat;
+    cursor: pointer;
+}
+.content .icon-ln .last:hover{
+    background: url("bg_v3.png") -36px -492px no-repeat;
+}
+/*底部*/
+.footer{
+    width:100%;
+    height:85px;
+    background: #fff;
+    clear: both;
+    overflow: hidden;
+}
+.footer img{
+    display: block;
+    padding:20px 70px 20px 0;
+    float: left;
+    cursor: pointer;
+}
+.footer .foot-nav{
+    color:#959595;
+    font-size: 12px;
+}
+.footer .foot-nav li{
+    float: left;
+}
+.footer .foot-nav a{
+    color:#959595;
+    margin:20px 15px 10px 0;
+}
+.footer .foot-nav a:hover{
+    color:#6F6F6E;
+}
+.footer .foot-nav {
+    padding:25px 10px;
+}
+.footer .foot-nav .indent{
+    margin-top: 5px;
+    text-indent: 120px;
+}
+.footer .foot-nav .indent img{
+    position: absolute;
+    right:100px;
+    bottom:-180px;
+    cursor: pointer;
+}
+/*二维码*/
+.login-two{
+    width:295px;
+    height:460px;
+    clear: both;
+    overflow: hidden;
+    position: relative;
+    display: none;
+}
+.login-two p{
+    text-align: center;
+    margin-top:30px;
+    color:#666666;
+}
+.login-two .two-all{
+    width:295px;
+    height:360px;
+}
+.login-two .two-all .two-left{
+    width:135px;
+    height:135px;
+    background: url("getUrlQrcode.jpg") no-repeat;
+    margin:40px auto;
+    border:1px solid #DDDEDD;
+    box-shadow: 1px 1px 3px #ccc;
+    z-index: 1;
+}
+.login-two .two-all .two-right{
+    width:135px;
+    height:170px;
+    background: url("http://mimg.127.net/index/lib/img/applogin_example.png");
+    position: absolute;
+    top:70px;
+    right:0;
+    display: none;
+}
+.login-two .two-all span{
+    display: block;
+    width:170px;
+    font-size: 12px;
+    color:#fff;
+    background: #90C5F3;
+    padding:3px 10px;
+    text-align: center;
+    margin:0 auto;
+    border-radius: 2em;
+}
+.login-two .two-all a{
+    color:#4EA9F6;
+    font-size: 12px;
+}
+.login-two .two-all a:hover:first-child{
+    color:#67D4FE;
+}
+.login-two .two-all a:hover:last-child{
+    text-decoration: underline;
+}
+.login-two .two-all var{
+    color:#EAE0EA;
+    margin:0 5px;
+}
+.login-two .two-all .login-font{
+    clear: both;
+    margin:20px auto;
+    text-align: center;
+}
+/*js*/
+#prompt{
+    width:200px;
+    height:40px;
+    color:#E4B265;
+    padding:5px 10px 5px;
+    border:1px solid #E5CB97;
+    background: #FFFDE4;
+    font-size: 12px;
+    display: none;
+    position: absolute;
+    top:190px;
+    left:30px;
+}
+.login .btn-bb{
+    position: absolute;
+    width:150px;
+    height:70px;
+    border:1px solid #B7C2C9;
+    font-size: 14px;
+    right:90px;
+    top:278px;
+    z-index: 2;
+    display: none;
+}
+.login .btn-bb a{
+    display: block;
+    color:#848585;
+    text-indent: 20px;
+    background-color:#fff;
+}
+.login .btn-bb li.active a{
+    background:#EEF3F8 url("bg_v3.png") -252px -58px no-repeat;
+    color:#5B8CCA;
+}
